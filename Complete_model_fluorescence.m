@@ -1,7 +1,7 @@
 clc;
 close all;
 t=0:1:7200;    %Time for Set1 equations - miRNA_antimiR incubation
-x0=[100*10^-9,100*10^-9,0];  %initial values of miRNA< antimiR and complex
+x0=[100*10^-9,100*10^-9,0];  %initial values of miRNA, antimiR and complex
 [t,x]= ode15s(@f, t, x0);  %Calling function containing ODES and their solution
 figure()
 plot(x);
@@ -14,7 +14,7 @@ x0_1=0;      %initial value of CTS
 [t1,x1]=ode15s(@h, t1, x0_1);
 CTS0=x1(end); %Final value of CTS
 t2=0:1:7200; %Time for Set2 equations - CTS_complex interactions
-y0_2=[com0,CTS0,0,0,0,0];  %initial value of components in Set2
+y0_2=[com0,CTS0,0,0,0,0];  %initial value of components in Set2 = antimiR-miR complex, CTS, OTS, GFP, Mature GFP and Fluorescence Intensity
 [t2,y]= ode15s(@g, t2, y0_2); 
 figure()
 plot(y)
@@ -35,18 +35,18 @@ plot(y(:,3));
 xlabel('Time (s)')
 ylabel('Intensity')
 
-function dx= f(~,x)  %Set1 reactions
+function dx= f(~,x)  %Set1 reactions - miRNA and antimiRNA complex formation
 kmiRantimiR_b=10^5;  %Parameters for Set1
 kmiRantimiR_ub=1;
 kdecay=3*10^-4;
 
- dx(1)=-kmiRantimiR_b*x(1)*x(2)-kdecay*x(1); %Equations for Set1
+ dx(1)=-kmiRantimiR_b*x(1)*x(2)-kdecay*x(1); %Equations for Set1 - Initial CTS Trascription
  dx(2)=-kmiRantimiR_b*x(1)*x(2)-kdecay*x(2);
  dx(3)=kmiRantimiR_b*x(1)*x(2);
  dx=dx(:);
 end
 
-function dy= g(~,y)  %Set2 reactions
+function dy= g(~,y)  %Set2 reactions - CTS and antimiR-miRNA binding and downstream GFP expression
 kcomplexcts_b=10^5;  %Parameters for Set2
 ktranscription=1.1*10^-3;
 ktranslation=1.7*10^-2;
