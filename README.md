@@ -1,5 +1,9 @@
 # ReactionKineticsModelling
 Project Title: Reaction Kinetics Modelling of Second generation Toehold switches for miRNA biomarkers 
-Description: We employed mass action kinetics to computationally evaluate the performance of designed toehold switches as biosensors of miRNA biomarkers. 
-Before understanding the reaction kinetics of the designed second generation toehold switches 
-The GitHib file contains 
+
+Description: 
+We employed mass action kinetics to computationally evaluate the performance of designed toehold switches as biosensors of miRNA biomarkers. 
+Before understanding the reaction kinetics of the designed second generation toehold switches, we emulated the model proposed by iGEM CLSB-UK (2017) so that we could get an insight of their kinetic model on first generation toehold switchs and anticipate the plausible errors that could be encountered during our simulations. The code for the initial and final models described in the http://2017.igem.org/Team:CLSB-UK/Model# are available in the MATLAB files titled "Initial_CLSB_model.m" and "Final_CLSB_model.m" files. 
+Following validation from the CLSB models, we generalised them to second generation toehold switches by adding an upstream reaction between miRNA biomarker and a synthetically designed anti-miRNA with partial complementarity to the miRNA biomarker. We also added a downstream reaction to quantify the fluorescence intensity from the Mature GFP considering the practical fact that only the mature GFP fluoresces. 
+In this GitHib repository, we have our generalized model written on two platforms, namely MATLAB and SBML titled "Complete_Model_Fluorescence.m" and "Palaniappan2021_Cell free modelling of second generation toehold switches.xml". 
+Complete information about the model that includes parameters, reaction definitions, differential equations representing the equations are provided in the pre-print titled "End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer" available at bioRxiv (https://doi.org/10.1101/2021.07.09.451282). 
