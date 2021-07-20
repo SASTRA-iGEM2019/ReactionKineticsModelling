@@ -1,9 +1,16 @@
-# ReactionKineticsModelling
-Project Title: Reaction Kinetics Modelling of Second generation Toehold switches for miRNA biomarkers 
+# Cell-free reaction kinetics modelling of second generation toehold switches 
+Standard mass action kinetics to computationally evaluate the performance of toehold switches as biosensors of miRNA biomarkers. 
 
-Description: 
-We employed mass action kinetics to computationally evaluate the performance of designed toehold switches as biosensors of miRNA biomarkers. 
-Before understanding the reaction kinetics of the designed second generation toehold switches, we emulated the model proposed by iGEM CLSB-UK (2017) so that we could get an insight of their kinetic model on first generation toehold switchs and anticipate the plausible errors that could be encountered during our simulations. The code for the initial and final models described in the http://2017.igem.org/Team:CLSB-UK/Model# are available in the MATLAB files titled "Initial_CLSB_model.m" and "Final_CLSB_model.m" files. 
-Following validation from the CLSB models, we generalised them to second generation toehold switches by adding an upstream reaction between miRNA biomarker and a synthetically designed anti-miRNA with partial complementarity to the miRNA biomarker. We also added a downstream reaction to quantify the fluorescence intensity from the Mature GFP considering the practical fact that only the mature GFP fluoresces. 
-In this GitHib repository, we have our generalized model written on two platforms, namely MATLAB and SBML titled "Complete_Model_Fluorescence.m" and "Palaniappan2021_Cell free modelling of second generation toehold switches.xml". 
-Complete information about the model that includes parameters, reaction definitions, differential equations representing the equations are provided in the pre-print titled "End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer" available at bioRxiv (https://doi.org/10.1101/2021.07.09.451282). 
+* Initial_CLSB_model.m :
+Simulation inspired by the "initial model" described in [iGEM CLSB-UK](http://2017.igem.org/Team:CLSB-UK/Model#) (2017) 
+* Final_CLSB_model.m :
+Simulation extending the 'initial model' above and inspired by the "final model" described in [iGEM CLSB-UK](http://2017.igem.org/Team:CLSB-UK/Model#) (2017) 
+* Complete_model_fluorescence.m :
+Generalisation of kinetics to second generation toehold switches. Here, an upstream reaction between miRNA biomarker and  synthetic anti-miRNA with partial complementarity to the miRNA biomarker, and a downstream reaction accounting for the GFP maturation, were added to the 'final model' above.
+* Palaniappan2021_Cell free modelling of second generation toehold switches.xml :
+Executable SBML of the above 'Complete model.' 
+
+Citation
+------------
+
+More information about the parameters, and the models are found in [End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer](https://doi.org/10.1101/2021.07.09.451282). 
