@@ -13,4 +13,4 @@ Executable SBML of the above 'Complete model.'
 Citation
 ------------
 
-More information about the parameters, and the models are found in [End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer](https://doi.org/10.1101/2021.07.09.451282). 
+More information about the parameters, and the models could be found in [End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer](https://doi.org/10.1101/2021.07.09.451282). [Manuscript submitted]
