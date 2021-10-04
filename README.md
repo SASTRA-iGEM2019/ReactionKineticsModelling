@@ -12,7 +12,7 @@ Executable SBML of the above 'Complete model.'
 
 **Usage**
 * Initial_CLSB_model.m :
-The model describes the opening of a toehold switch on miRNA binding. As input, on giving the concentration of the closed toehold switch and miRNA, its opening on interaction between miRNA and toehold can be visualised quantitatively.
+The model describes the opening of a toehold switch on miRNA binding. On giving the concentration of the closed toehold switch and miRNA as input, its opening on interaction between miRNA and toehold can be visualised quantitatively.
 * Final_CLSB_model.m :
 As an extension of the initial model, this model includes the upstrea
 * Complete_model_fluorescence.m :
