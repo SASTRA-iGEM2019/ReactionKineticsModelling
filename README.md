@@ -10,6 +10,17 @@ Generalisation of kinetics to second generation toehold switches. Here, an upstr
 * Palaniappan2021_Cell free modelling of second generation toehold switches.xml :
 Executable SBML of the above 'Complete model.' 
 
+**Usage**
+* Initial_CLSB_model.m :
+The model describes the opening of a toehold switch on miRNA binding. As input, on giving the concentration of the closed toehold switch and miRNA, its opening on interaction between miRNA and toehold can be visualised quantitatively.
+* Final_CLSB_model.m :
+As an extension of the initial model, this model includes the upstrea
+* Complete_model_fluorescence.m :
+Generalisation of kinetics to second generation toehold switches. Here, an upstream reaction between miRNA biomarker and  synthetic anti-miRNA with partial complementarity to the miRNA biomarker, and a downstream reaction accounting for the GFP maturation, were added to the 'final model' above.
+* Palaniappan2021_Cell free modelling of second generation toehold switches.xml :
+Executable SBML of the above 'Complete model.' 
+
+
 Citation
 ------------
 
