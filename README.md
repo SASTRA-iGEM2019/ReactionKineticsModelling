@@ -4,7 +4,7 @@ Standard mass action kinetics to computationally evaluate the performance of toe
 * Initial_CLSB_model.m :
 Simulation inspired by the "initial model" in [iGEM CLSB-UK](http://2017.igem.org/Team:CLSB-UK/Model#) (2017). Describes first-generation toehold switch kinetics on miRNA binding. 
   - `Input`: Concentrations of the closed toehold switch and miRNA 
-  - `Output`: Opening on interaction between miRNA and toehold 
+  - `Output`: Concentration of opened toehold switches upon binding to trigger miRNA
 * Final_CLSB_model.m :
 Simulation extending the 'initial model' above and inspired by the "final model" described in [iGEM CLSB-UK](http://2017.igem.org/Team:CLSB-UK/Model#) (2017). Includes the upstream transcription of the closed toehold switch and the downstream translation of green fluorescent protein (GFP) from the open toehold switch. 
   - `Input`: Concentrations of toehold DNA and miRNA
