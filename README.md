@@ -20,5 +20,5 @@ Executable SBML model of the second-generation toehold switch (i.e, above 'Compl
 Citation
 ------------
 
-More information about the parameters, and the models could be found in [End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer](https://doi.org/10.1101/2021.07.09.451282) and the accompanying [`Supplementary Information`](https://doi.org/10.6084/m9.figshare.14915619.v1).
+More information about the parameters, and the models could be found in our manuscript [End-to-end computational approach to the design of RNA biosensors for miRNA biomarkers of cervical cancer](https://doi.org/10.1101/2021.07.09.451282) and the accompanying [`Supplementary Information`](https://doi.org/10.6084/m9.figshare.14915619.v1).
 We would like to acknowledge [`CLSB-UK iGEM 2017 Team`](http://2017.igem.org/Team:CLSB-UK) for blazing the trail. 
